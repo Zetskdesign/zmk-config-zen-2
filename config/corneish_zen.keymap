@@ -5,10 +5,7 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 / {
     chosen {
@@ -41,10 +38,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
-                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &mo 3
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I             &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K             &kp L    &kp SEMI  &kp ENTER
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &kp COMMA         &kp DOT  &kp FSLH  &kp DELETE
+                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp K_PLAY_PAUSE
             >;
         };
 
@@ -58,10 +55,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC          &kp N1  &kp N2  &kp N3    &kp N4  &kp N5    &kp N6    &kp N7        &kp N8          &kp N9     &kp N0  &kp BSPC
-&kp CAPS         &kp F1  &kp F2  &kp F3    &kp F4  &kp F5    &kp LEFT  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp SLASH
-&kp PRINTSCREEN  &trans  &trans  &trans    &trans  &trans    &trans    &trans        &trans          &trans     &trans  &trans
-                                 &kp LWIN  &trans  &trans    &kp INS   &kp DEL       &trans
+&kp ESC                &kp N1  &kp N2          &kp N3        &kp N4          &kp N5       &kp N6   &kp N7   &kp N8  &kp N9        &kp N0        &kp BSPC
+&kp LC(LA(LS(SPACE)))  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT    &trans   &trans   &trans  &trans        &trans        &trans
+&kp PRINTSCREEN        &kp F1  &kp F2          &kp F3        &kp F4          &kp F5       &trans   &trans   &trans  &kp C_VOL_UP  &kp C_VOL_DN  &kp LG(LC(V))
+                                               &kp LWIN      &trans          &trans       &kp INS  &kp DEL  &trans
             >;
         };
 
@@ -75,20 +72,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans          &kp EXCL      &kp AT        &kp HASH      &kp DLLR    &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans          &none         &none         &none         &none       &none            &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp SINGLE_QUOTE
-&bt BT_CLR_ALL  &out OUT_USB  &out OUT_BLE  &bt BT_SEL 1  &bt BT_NXT  &bt BT_DISC 0    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                            &trans        &trans      &kp SPACE        &kp RET    &trans     &trans
-            >;
-        };
-
-        layer_3 {
-            display-name = "Fn";
-            bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F20  &trans  &trans  &kp F11  &kp F12  &kp C_VOLUME_UP
-&trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans  &trans  &trans   &trans   &kp C_VOLUME_DOWN
-&trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans  &trans  &trans   &trans   &kt LG(LC(V))
-                        &trans  &trans  &trans    &trans   &trans  &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &none     &none   &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp SINGLE_QUOTE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                          &trans    &trans    &kp SPACE    &kp RET    &trans     &trans
             >;
         };
     };

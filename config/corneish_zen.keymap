@@ -48,10 +48,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
-                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &mo 0
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I             &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K             &kp L    &kp SEMI  &kp ENTER
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &kp COMMA         &kp DOT  &kp FSLH  &kp DELETE
+                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp LEFT_COMMAND
             >;
         };
 
@@ -85,17 +85,7 @@
 &kp TAB       &kp EXCL  &kp AT  &kp HASH  &kp DLLR      &kp PRCNT         &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans        &none     &none   &trans    &none         &none             &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp SINGLE_QUOTE
 &kp LEFT_ALT  &trans    &trans  &trans    &bt BT_SEL 1  &bt BT_CLR_ALL    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                &trans    &tog 3        &kp SPACE         &kp RET    &trans     &trans
-            >;
-        };
-
-        MacOSSet {
-            display-name = "QWERTY";
-            bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I             &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K             &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_COMMAND  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &kp COMMA         &kp DOT  &kp FSLH  &kp DELETE
-                                &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp LEFT_CONTROL
+                                &trans    &trans        &kp SPACE         &kp RET    &trans     &trans
             >;
         };
     };

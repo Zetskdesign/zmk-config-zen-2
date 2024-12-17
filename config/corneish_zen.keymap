@@ -65,10 +65,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC          &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                   &kp N6           &kp N7          &kp N8        &kp N9           &kp N0  &kp BSPC
-&kp CAPSLOCK     &kp F1  &kp F2  &kp F3    &kp F4  &kp F5                   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&kp PRINTSCREEN  &trans  &trans  &trans    &kp F9  &kp LS(LA(LC(SPACE)))    &kp PRINTSCREEN  &trans          &trans        &trans           &trans  &trans
-                                 &kp LWIN  &trans  &trans                   &kp INS          &kp DEL         &trans
+&kp ESC       &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                   &kp N6           &kp N7          &kp N8        &kp N9           &kp N0  &kp BSPC
+&kp CAPSLOCK  &kp F1  &kp F2  &kp F3    &kp F4  &kp F5                   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&kp F9        &trans  &trans  &trans    &trans  &kp LS(LA(LC(SPACE)))    &kp PRINTSCREEN  &trans          &trans        &trans           &trans  &trans
+                              &kp LWIN  &trans  &trans                   &kp INS          &kp DEL         &kp PSCRN
             >;
         };
 

@@ -58,7 +58,7 @@
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5             &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
 &kp CAPS   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp F11
-&kp TILDE  &trans  &trans  &trans  &trans  &kp PRINTSCREEN    &trans    &trans    &trans  &trans     &trans  &kp F12
+&kp GRAVE  &trans  &trans  &trans  &trans  &kp PRINTSCREEN    &trans    &trans    &trans  &trans     &trans  &kp F12
                            &trans  &trans  &trans             &trans    &trans    &trans
             >;
         };

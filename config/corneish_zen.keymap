@@ -26,6 +26,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Layer3 {
+            bindings = <&mo 3>;
+            key-positions = <38 37>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -77,6 +86,15 @@
 &trans     &none         &none         &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp APOS
 &trans     &out OUT_USB  &out OUT_BLE  &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                        &trans    &trans    &kp SPACE    &kp RET    &trans     &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &kp P   &kp O   &kp I   &kp U   &kp Y        &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &kp L   &kp K   &kp J   &kp H        &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp M   &kp SPACE    &kp SPACE  &kp SPACE  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans       &trans     &trans     &trans
             >;
         };
     };

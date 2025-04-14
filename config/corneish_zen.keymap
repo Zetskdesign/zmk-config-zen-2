@@ -32,7 +32,7 @@
 
         Layer3 {
             bindings = <&mo 3>;
-            key-positions = <37 29>;
+            key-positions = <37 38>;
             slow-release;
         };
     };
@@ -67,10 +67,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3        &kp N4    &kp N5             &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
-&kp CAPS   &mkp MCLK  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT_ARROW    &trans  &trans  &trans  &trans  &trans  &kp F11
-&kp GRAVE  &kp F1     &kp F2    &kp F3        &kp F4    &kp F5             &trans  &trans  &trans  &trans  &trans  &kp F12
-                                &trans        &trans    &kp PRINTSCREEN    &trans  &trans  &trans
+&kp ESC    &kp N1     &kp N2    &kp N3        &kp N4    &kp N5             &kp N6          &kp N7          &kp N8           &kp N9  &kp N0  &kp BSPC
+&kp CAPS   &mkp MCLK  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT_ARROW    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &kp F11
+&kp GRAVE  &kp F1     &kp F2    &kp F3        &kp F4    &kp F5             &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &kp F12
+                                &trans        &trans    &trans             &trans          &trans          &trans
             >;
         };
 
@@ -93,10 +93,10 @@
 
         layer_3 {
             bindings = <
-&trans      &kp P   &kp O   &kp I   &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &kp L   &kp K   &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &trans
-&kp DELETE  &trans  &trans  &kp M   &kp N   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &trans  &trans    &trans  &trans  &trans
+&kp BACKSPACE  &kp P   &kp O   &kp I            &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &kp L   &kp K            &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &trans
+&kp F9         &trans  &trans  &trans           &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans
+                               &kp PRINTSCREEN  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };

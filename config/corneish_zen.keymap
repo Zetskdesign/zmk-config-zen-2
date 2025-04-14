@@ -67,9 +67,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3        &kp N4    &kp N5             &kp N6          &kp N7          &kp N8           &kp N9  &kp N0  &kp BSPC
-&kp CAPS   &mkp MCLK  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT_ARROW    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &kp F11
-&kp GRAVE  &kp F1     &kp F2    &kp F3        &kp F4    &kp F5             &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &kp F12
+&kp ESC    &kp N1     &kp N2    &kp N3        &kp N4    &kp N5             &kp N6          &kp N7          &kp N8           &kp N9          &kp N0  &kp BSPC
+&kp CAPS   &mkp MCLK  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT_ARROW    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &trans  &kp F11
+&kp GRAVE  &kp F1     &kp F2    &kp F3        &kp F4    &kp F5             &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans  &kp F12
                                 &trans        &trans    &trans             &trans          &trans          &trans
             >;
         };

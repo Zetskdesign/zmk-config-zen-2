@@ -32,7 +32,7 @@
 
         Layer3 {
             bindings = <&mo 3>;
-            key-positions = <37 38>;
+            key-positions = <37 24>;
             slow-release;
         };
     };
@@ -95,7 +95,7 @@
             bindings = <
 &kp BACKSPACE  &kp P   &kp O   &kp I            &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &trans  &kp L   &kp K            &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &trans
-&kp F9         &trans  &trans  &trans           &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &kp F9  &trans  &trans           &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans
                                &kp PRINTSCREEN  &trans  &trans    &trans  &trans  &trans
             >;
         };
